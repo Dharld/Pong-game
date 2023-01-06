@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url("./src/fonts/Minecraft.eot");
+  src: url("./src/fonts/Minecraft.eot?#iefix") format("embedded-opentype"),
+    url("./src/fonts/Minecraft.woff2") format("woff2"),
+    url("./src/fonts/Minecraft.woff") format("woff"),
+    url("./src/fonts/Minecraft.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Minecraft";
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+.field {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+  overflow: hidden;
+}
+
+#score1 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  font-size: 3rem;
+}
+
+#score2 {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  font-size: 3rem;
+}
+
+.middle-line {
+  position: absolute;
+  width: 1px;
+  height: calc(100% - 4px);
+  background-color: white;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+canvas {
+  border: 1px solid white;
+}
+
+canvas::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 500px;
+  background: white;
+  left: 50%;
+}

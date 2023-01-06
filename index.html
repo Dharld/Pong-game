@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PONG</title>
+    <link
+      rel="preload"
+      href="./src/fonts/Minecraft.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>PONG GAME</h2>
+    <span id="score1">0</span>
+    <span id="score2">0</span>
+    <div class="field">
+      <canvas id="canvas" width="800" height="500"></canvas>
+      <div class="middle-line"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
